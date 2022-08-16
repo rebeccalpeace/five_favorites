@@ -5,11 +5,8 @@
 {% block content %} 
     <h1 class="text-center mt-4 fw-bold">My five favorite flavors of La Croix</h1>
     <ol class="fs-4 ms-5 mt-5 fw-bold">
-        <li>Orange</li>
-        <li>Key Lime</li>
-        <li>Coconut</li>
-        <li>Apricot</li>
-        <li>Mango</li>
+        {% for flavor in favorites %}
+            <li>{{ flavor }}</li>
+        {% endfor %}
     </ol>
-
 {% endblock content %} 

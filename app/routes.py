@@ -8,4 +8,5 @@ def index():
 
 @app.route('/five_favorites')
 def favorites():
-    return render_template('favorites.html')
+    favorites = ['Orange', 'Key Lime', 'Coconut', 'Apricot', 'Mango']
+    return render_template('favorites.html', favorites=favorites)
